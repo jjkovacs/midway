@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-midway-navy bg-white antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading font-bold text-midway-navy;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Anton', 'Poppins', sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-heading font-semibold text-sm md:text-base tracking-wide transition-all duration-200 whitespace-nowrap;
+  }
+
+  .btn-primary {
+    @apply btn bg-midway-red text-white shadow-card hover:bg-midway-red-dark hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+
+  .btn-gold {
+    @apply btn bg-midway-gold text-midway-navy shadow-card hover:bg-midway-gold-light hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-white text-white hover:bg-white hover:text-midway-navy;
+  }
+
+  .btn-outline-navy {
+    @apply btn border-2 border-midway-navy text-midway-navy hover:bg-midway-navy hover:text-white;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .badge {
+    @apply inline-block rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider;
+  }
+
+  .container-page {
+    @apply container mx-auto;
+  }
+}
