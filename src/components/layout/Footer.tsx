@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="lg:col-span-2">
           <Link to="/" className="mb-4 inline-flex items-center">
             <img
-              src="/images/midway-logo.png"
+              src={`${import.meta.env.BASE_URL}images/midway-logo.png`}
               alt="Midway Sports &amp; Entertainment — Celebrating 75 Years"
               className="h-16 w-auto"
             />

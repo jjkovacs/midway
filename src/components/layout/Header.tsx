@@ -54,7 +54,7 @@ export default function Header() {
         <div className="container-page flex items-center justify-between py-3">
           <Link to="/" className="flex items-center">
             <img
-              src="/images/midway-logo.png"
+              src={`${import.meta.env.BASE_URL}images/midway-logo.png`}
               alt="Midway Sports &amp; Entertainment — Celebrating 75 Years"
               className="h-14 w-auto md:h-16"
             />
