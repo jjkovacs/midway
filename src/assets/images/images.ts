@@ -10,22 +10,20 @@
  * change on reload and never depend on a third-party image service being up.
  */
 
-const base = import.meta.env.BASE_URL;
-
 export const heroImages = {
-  home: `${base}images/home-hero-go-karts.jpg`,
-  goKarts: `${base}images/go-karts-hero.jpg`,
-  spinZone: `${base}images/spin-zone-hero.jpg`,
-  bungyDome: `${base}images/bungy-dome-hero.jpg`,
-  rockClimbing: `${base}images/rock-climbing-hero.jpg`,
-  miniGolf: `${base}images/mini-golf-hero.jpg`,
-  drivingRange: `${base}images/driving-range-hero.jpg`,
-  battingCages: `${base}images/batting-cages-hero.jpg`,
-  birthdays: `${base}images/birthdays-hero.jpg`,
-  privateEvents: `${base}images/private-events-hero.jpg`,
-  fieldTrips: `${base}images/field-trips-hero.jpg`,
-  groupEvents: `${base}images/group-events-hero.jpg`,
-  food: `${base}images/food-hero.jpg`,
+  home: '/images/home-hero-go-karts.jpg',
+  goKarts: '/images/go-karts-hero.jpg',
+  spinZone: '/images/spin-zone-hero.jpg',
+  bungyDome: '/images/bungy-dome-hero.jpg',
+  rockClimbing: '/images/rock-climbing-hero.jpg',
+  miniGolf: '/images/mini-golf-hero.jpg',
+  drivingRange: '/images/driving-range-hero.jpg',
+  battingCages: '/images/batting-cages-hero.jpg',
+  birthdays: '/images/birthdays-hero.jpg',
+  privateEvents: '/images/private-events-hero.jpg',
+  fieldTrips: '/images/field-trips-hero.jpg',
+  groupEvents: '/images/group-events-hero.jpg',
+  food: '/images/food-hero.jpg',
 };
 
 const attractionHero: Record<string, string> = {
@@ -56,7 +54,7 @@ const galleryCount: Record<string, number> = {
 export const galleryImages: Record<string, string[]> = Object.fromEntries(
   Object.entries(galleryCount).map(([slug, count]) => [
     slug,
-    Array.from({ length: count }, (_, i) => `${base}images/gallery/${slug}/${i + 1}.jpg`),
+    Array.from({ length: count }, (_, i) => `/images/gallery/${slug}/${i + 1}.jpg`),
   ]),
 );
 
